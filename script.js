@@ -58,11 +58,12 @@ function processCommand(input) {
 
   switch (input.trim().toLowerCase()) {
     case 'help':
-      output.textContent += `whois          Who are you?)\n`;
+      output.textContent += `whois          Who are you?\n`;
       output.textContent += `test1          Launch test1 program \n`;
       output.textContent += `dex            Launch DexScreener\n`;
       output.textContent += `tg             Launch Telegram for test1\n`;
       output.textContent += `x              Launch Twitter/X website\n`;
+      output.textContent += 'history        Check the chain\n';
       break;
     case 'whois':
       output.textContent += `Username: ${username}\n`;
@@ -79,6 +80,9 @@ function processCommand(input) {
     case 'x':
       window.open('https://twitter.com/test1onSolana', '_blank');
       break;
+    case 'history':
+      window.open('https://solscan.io/tx/4N9wyLcS94DnYk24jyKqaMBnSsu8RGoqiN3aCFVcY5jqyxTp8ezuQ5iKnGeSz4GPraXVoS5YNsGAv4yxUpRGX5f4', '_blank');
+      break;  
     default:
       output.textContent += 'Command not recognized.\n';
   }
