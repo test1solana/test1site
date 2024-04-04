@@ -59,7 +59,7 @@ function processCommand(input) {
   switch (input.trim().toLowerCase()) {
     case 'help':
       output.textContent += `whois          Who are you?\n`;
-      output.textContent += `test1          Launch test1 program \n`;
+      output.textContent += `test1          Launch test1 program\n`;
       output.textContent += `dex            Launch DexScreener\n`;
       output.textContent += `tg             Launch Telegram for test1\n`;
       output.textContent += `x              Launch Twitter/X website\n`;
@@ -69,7 +69,7 @@ function processCommand(input) {
       output.textContent += `Username: ${username}\n`;
       break;
     case 'test1':
-      window.open('https://test0ne.com/freeyourmind.html', '_blank');
+      window.open('https://test0ne.fun/', '_blank');
       break;
     case 'dex':
       window.open('https://dexscreener.com/solana/5wsrqgrjfivs4tdfzcavqzksgcgk3nu9gjiqoilnuazu', '_blank');
