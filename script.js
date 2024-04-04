@@ -69,7 +69,7 @@ function processCommand(input) {
       output.textContent += `Username: ${username}\n`;
       break;
     case 'test1':
-      window.open('https://test0ne.fun', '_blank');
+      window.open('https://www.pump.fun/C1KVoDKqiEYnQERGpHbzPTwkSZjtfTFFmRZHH1rGZmdm', '_blank');
       break;
     case 'dex':
       window.open('https://dexscreener.com/solana/5wsrqgrjfivs4tdfzcavqzksgcgk3nu9gjiqoilnuazu', '_blank');
