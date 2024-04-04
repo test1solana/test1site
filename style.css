@@ -1,0 +1,64 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: limegreen;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px; /* Set default font size */
+}
+
+#terminal {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#output {
+  white-space: pre-wrap;
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+#input {
+  /* width: calc(100% - 4px); */ /* Adjust width to ensure it fits well */
+  background: none;
+  border: none;
+  color: limegreen;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px; /* Ensure input font size matches the default */
+  caret-color: limegreen; /* Makes the cursor blink in lime green */
+}
+
+/* Style for the blinking cursor effect */
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: limegreen; }
+}
+
+#input:focus {
+  animation: blink 1s step-end infinite;
+}
+
+.input-line {
+  /* display: flex; */
+  align-items: center;
+}
+
+#prompt {
+  color: limegreen;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px; /* Match the input font size */
+}
+
+#input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  color: limegreen;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px; /* Ensure input font size matches the prompt */
+  caret-color: limegreen; /* Makes the cursor blink in lime green */
+}
