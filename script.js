@@ -64,6 +64,8 @@ function processCommand(input) {
       output.textContent += `tg             Launch Telegram for test1\n`;
       output.textContent += `x              Launch Twitter/X website\n`;
       output.textContent += 'history        Check the chain\n';
+      output.textContent += 'stage2         \n';
+
       break;
     case 'whois':
       output.textContent += `Username: ${username}\n`;
@@ -83,6 +85,9 @@ function processCommand(input) {
     case 'history':
       window.open('https://solscan.io/tx/4N9wyLcS94DnYk24jyKqaMBnSsu8RGoqiN3aCFVcY5jqyxTp8ezuQ5iKnGeSz4GPraXVoS5YNsGAv4yxUpRGX5f4', '_blank');
       break;  
+    case 'stage2':
+      window.open('https://en.wikipedia.org/wiki/Cicada_3301', '_blank');
+      break; 
     default:
       output.textContent += 'Command not recognized.\n';
   }
